@@ -25,7 +25,12 @@
     svg = d3.select("#chart").append("svg")
       .attr("width", w)
       .attr("height", h)
-      .style("background-color", "#13373a");
+    svg.append("g").append("svg:rect")
+      .attr("rx", 5)
+      .attr("ry", 5)
+      .attr("width", w)
+      .attr("height", h)
+      .attr("fill", "#0d2628");
     svg = svg.append("g");
   }
 
