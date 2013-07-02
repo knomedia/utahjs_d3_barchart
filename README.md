@@ -1,4 +1,3 @@
-utahjs_d3_barchart
-==================
+# utahjs_d3_barchart
 
-Simple barchart using D3
+Simple barchart using D3 for use as an example during UtahJS D3 presentation.
