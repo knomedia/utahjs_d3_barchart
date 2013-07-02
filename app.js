@@ -36,6 +36,8 @@
         .attr("class", "bar bright")
         .attr("x", function(d,i) {return (xScale(i) + 2);} )
         .attr("y", function(d) {return 450 })
+        .attr("rx", 4)
+        .attr("ry", 4)
         .attr("width", function(d,i){ return (xScale( 1 ) - 5 )})
         .attr("height", function(d) {return 0} )
         .on("click", showIt)
