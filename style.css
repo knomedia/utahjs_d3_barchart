@@ -14,4 +14,6 @@ body {
 
 .bright {
   fill: #abe4f7;
+  stroke: #FFF;
+  stroke-width: 1px;
 }
