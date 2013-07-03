@@ -61,15 +61,13 @@
         .attr("ry", 4)
         .attr("width", function(d,i){ return (xScale( 1 ) - 5 )})
         .attr("height", function(d) {return 0;} )
-        .attr("y", function(d,i){return h -( h - yScale(d) )})
-        .attr("height", function(d) { return h -  yScale(d) ; } )
         .on("click", showIt)
         .transition()
           .delay( function(d,i){return i * 200})
           .duration( 300 )
           .ease("cubic-in-out")
-          //.attr("y", function(d) { return h - yScale(d) })
-          //.attr("height", function(d) { return  yScale( d ) } )
+          .attr("y", function(d,i){return h -( h - yScale(d) )})
+          .attr("height", function(d) { return h -  yScale(d) ; } )
   }
 
   function showIt (d,i) {
